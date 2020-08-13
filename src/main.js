@@ -1,4 +1,4 @@
-const Person = require("./Person");
+const Person = require("./person");
 
 const people = [
   { name: "Gary", age: 24 },
