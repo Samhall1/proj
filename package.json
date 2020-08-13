@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "app": "node main.js",
+    "app": "node src/main.js",
     "test": "jest"
   },
   "author": "",

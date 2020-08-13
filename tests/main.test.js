@@ -1,3 +1,32 @@
-test('adds 1 + 2 to equal 3', () => {
-  expect(1 + 2).toBe(3);
+const Person = require("../src/Person");
+
+test('Person name is Gary', () => {
+  const p = new Person('Gary', 24);
+  expect(p.name).toBe('Gary');
+});
+
+test('Person age is 24', () => {
+  const p = new Person('Gary', 24);
+  expect(p.age).toBe(24);
+});
+
+test('Person can vote', () => {
+  const p = new Person('Gary', 24);
+  expect(p.canVote()).toBe(true);
+});
+
+test('Person is active', () => {
+  const p = new Person('Gary', 24);
+  p.exercise();
+  p.exercise();
+  p.exercise();
+  expect(p.isActive()).toBe(true);
+});
+
+test('Person can vote', () => {
+  const p = new Person('Gary', 24);
+  p.readBook("Structure and Implementation of Computer Programs");
+  p.readBook("The Little Schemer");
+  p.readBook("Let Over Lambda");
+  expect(p.isAvidReader()).toBe(true);
 });
