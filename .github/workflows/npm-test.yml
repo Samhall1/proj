@@ -22,5 +22,15 @@ jobs:
     - run: npm test
       env:
         CI: true
+
+  lint:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [12.x, 14.x]
+
+    steps:
     - name: ESLint Action
       uses: hallee/eslint-actions@1.0.3
