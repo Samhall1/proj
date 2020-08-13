@@ -1,4 +1,4 @@
-const Person = require("../src/Person");
+const Person = require("../src/person");
 
 test('Person name is Gary', () => {
   const p = new Person('Gary', 24);
