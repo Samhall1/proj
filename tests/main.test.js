@@ -10,8 +10,18 @@ test('Person age is 24', () => {
   expect(p.age).toBe(24);
 });
 
-test('Person can vote', () => {
+test('Person can vote when 24', () => {
   const p = new Person('Gary', 24);
+  expect(p.canVote()).toBe(true);
+});
+
+test('Person cannot vote when 17', () => {
+  const p = new Person('Gary', 17);
+  expect(p.canVote()).toBe(false);
+});
+
+test('Person can vote when 18', () => {
+  const p = new Person('Gary', 18);
   expect(p.canVote()).toBe(true);
 });
 

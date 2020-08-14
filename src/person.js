@@ -8,7 +8,7 @@ class Person {
   }  
 
   canVote() {
-    return this.age > 18;
+    return this.age >= 18;
   };
 
   readBook(book) {
