@@ -8,7 +8,7 @@ class Person {
   }  
 
   introduce() {
-    this.name = console.log(`Hello, my name is ,${this.name}`);
+    return(`Hello, my name is ,${this.name}`);
   };
 
   canVote() {
