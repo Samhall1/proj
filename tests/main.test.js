@@ -23,7 +23,7 @@ test('Person is active', () => {
   expect(p.isActive()).toBe(true);
 });
 
-test('Person can vote', () => {
+test('Person is reading', () => {
   const p = new Person('Gary', 24);
   p.readBook("Structure and Implementation of Computer Programs");
   p.readBook("The Little Schemer");
