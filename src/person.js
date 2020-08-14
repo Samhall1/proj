@@ -58,6 +58,10 @@ class Person {
     return this.exercised >= 2;
   };
 
+  toString() {
+    return this.name.toUpperCase();
+  }
+
   isAvidReader() {
     return this.books.length >= 3;
   };
