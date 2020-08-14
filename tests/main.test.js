@@ -30,3 +30,11 @@ test('Person can vote', () => {
   p.readBook("Let Over Lambda");
   expect(p.isAvidReader()).toBe(true);
 });
+
+test('Person read book', () => {
+  const p = new Person('Sam', 30);
+  p.readBook("Of mice and men");
+  p.readBook("Of mice and men");
+  p.readBook("Of mice and men");
+  expect(p.books[0].count).toBe(3);
+});
