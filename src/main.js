@@ -5,7 +5,9 @@ const people = [
   { name: "Gina", age: 18 },
 ];
 
-for(i = 0; i < people.length; i++) {
+let i = 0
+
+for (i = 0; i < people.length; i++) {
     const person = new Person(people[i].name, people[i].age);
     console.log(person.canVote());
     console.log(person.isActive());
