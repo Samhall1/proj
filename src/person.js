@@ -1,27 +1,29 @@
-function Person(name, age) {
-  this.name = name;
-  this.age = age;
-  this.pets = [];
-  this.books = [];
-  this.exercised = 0;
+class Person {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+    this.pets = [];
+    this.books = [];
+    this.exercised = 0;
+  }  
 
-  this.canVote = function() {
+  canVote() {
     return this.age > 18;
   };
 
-  this.readBook = function(book) {
+  readBook(book) {
     this.books.push(book);
   };
 
-  this.exercise = function() {
+  exercise() {
     this.exercised += 1;
   };
 
-  this.isActive = function() {
+  isActive() {
     return this.exercised >= 2;
   };
 
-  this.isAvidReader = function() {
+  isAvidReader() {
     return this.books.length === 3;
   };
 }
