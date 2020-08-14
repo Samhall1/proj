@@ -1,5 +1,5 @@
 const Person = require("./person");
-const pets = require("./pets");
+const Pets = require("./pets");
 
 const people = [
   { name: "Gary", age: 24 },
