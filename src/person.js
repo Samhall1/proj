@@ -7,6 +7,10 @@ class Person {
     this.exercised = 0;
   }  
 
+  introduce() {
+    return(`Hello, my name is ,${this.name}`);
+  };
+
   canVote() {
     return this.age >= 18;
   };
