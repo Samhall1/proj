@@ -24,7 +24,7 @@ class Person {
   };
 
   isAvidReader() {
-    return this.books.length === 3;
+    return this.books.length >= 3;
   };
 }
 
