@@ -1,4 +1,4 @@
-class pets {
+class Pets {
     constructor(species, petName, favoriteFood, favoriteToy, noise) {
         this.species = species;
         this.petName = petName;
@@ -7,4 +7,4 @@ class pets {
         this.noise = noise; 
     }
 } 
-module.exports = pets;
+module.exports = Pets;
