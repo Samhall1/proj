@@ -14,5 +14,5 @@ for(i = 0; i < people.length; i++) {
     person.readBook("c");
     console.log(person.isAvidReader());
     console.log(person.canVote());
-    console.log(person.toString(people[i].name));
+    console.log(person.toString());
 }
