@@ -5,6 +5,7 @@ const people = [
   { name: "Gina", age: 18 },
 ];
 
+let i = 0
 
 for (i = 0; i < people.length; i++) {
     const person = new Person(people[i].name, people[i].age);
