@@ -20,3 +20,5 @@ for (i = 0; i < people.length; i++) {
     console.log(person.toString());
     console.log(person.introduce());
 }
+
+
