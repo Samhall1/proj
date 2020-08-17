@@ -7,4 +7,5 @@ class Pets {
         this.noise = noise; 
     }
 } 
+
 module.exports = Pets;

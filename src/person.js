@@ -12,9 +12,6 @@ class Person {
   };
 
   readBook(book) {
-
-    // this.books.push(book);
-    // ? 
     let found = false;
     for(let b of this.books){
       if( b.name == book ){
@@ -29,22 +26,24 @@ class Person {
         count: 1
       })
     }
-    // let result = {};
-    //    for(let i = 0; i < this.books.length; i++){  // ?  This will loop through the books array
-    //   const item = list[i];
-    //   if(result[item.books]){    // ?  This checks the book if it is true, the code block will be executed 
-    //     result[item.books] = result[item.books] + 1; // ? This will increment the result 
-    //   } 
-    //   else{
-    //     result[item.book] = 1;
-    //   } 
-    //   return result;
-    
-    // };
-   
-   
-    // ? While loop??
   };
+
+  adoptPet(pet) {
+    let adopted = false;
+    for(let p of this.pets){
+        if( p.petName == pet ){
+            p.count++;
+            adopted = true;
+            break;
+        }
+        if(!adopted){
+          this.pets.push({
+            name: pet,
+            count: 1
+          })
+        }
+    }
+};
 
   exercise() {
     this.exercised += 1;
@@ -55,7 +54,7 @@ class Person {
   };
 
   isAvidReader() {
-    return this.books.length >= 3;
+    return this.books.length === 3;
   };
 }
 

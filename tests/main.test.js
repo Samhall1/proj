@@ -48,3 +48,12 @@ test('Person read book', () => {
   p.readBook("Of mice and men");
   expect(p.books[0].count).toBe(3);
 });
+
+test('Person can adopt a pet', () => {
+  const p = new Person('Sam', 30);
+  p.adoptPet('Oliver');
+  p.adoptPet('Oliver');
+  p.readBook("Of mice and men");
+  console.log(p)
+  expect(p.pets[0].count).toBe(2);
+})
