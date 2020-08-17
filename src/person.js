@@ -32,7 +32,24 @@ class Person {
         name: book,
         count: 1
       })
-    }
+    };
+  };
+
+    favouriteBooks() {
+      let favBooks = [];
+      for(let i = 0; i < this.books.length; i++) {
+        if(this.books[i].count > 1) {
+          favBooks.push(this.books[i].name);
+        }
+      }
+      console.log(favBooks);
+      return favBooks;
+    };
+  
+
+
+
+
     // let result = {};
     //    for(let i = 0; i < this.books.length; i++){  // ?  This will loop through the books array
     //   const item = list[i];
@@ -48,7 +65,6 @@ class Person {
    
    
     // ? While loop??
-  };
 
   exercise() {
     this.exercised += 1;
@@ -71,3 +87,8 @@ class Person {
 module.exports = Person;
 
 
+const hamza = new Person ("Hamza" , 18)
+hamza.readBook("spiderman")
+hamza.readBook("spiderman")
+hamza.favouriteBooks()
+console.log(hamza)
