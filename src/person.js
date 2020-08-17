@@ -85,10 +85,3 @@ class Person {
 
 
 module.exports = Person;
-
-
-const hamza = new Person ("Hamza" , 18)
-hamza.readBook("spiderman")
-hamza.readBook("spiderman")
-hamza.favouriteBooks()
-console.log(hamza)
