@@ -6,7 +6,7 @@ class Person {
     this.books = [];
     this.exercised = 0;
   }  
-
+  
   introduce() {
     return(`Hello, my name is ,${this.name}`);
   };
@@ -54,13 +54,13 @@ class Person {
     this.exercised += 1;
   };
 
+  toString() {
+    return this.name.toUpperCase()
+  }
+
   isActive() {
     return this.exercised >= 2;
   };
-
-  toString() {
-    return this.name.toUpperCase();
-  }
 
   isAvidReader() {
     return this.books.length >= 3;
